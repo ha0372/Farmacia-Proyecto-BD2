@@ -54,4 +54,11 @@ Producto_FK int references Producto(Id_Producto),
 Cantidad int,
 PrecioVenta money,
 );
+create table DetalleCompra(
 
+Id_DetalleCompra int not null identity primary key,
+Producto_FK int references Producto(Id_Producto),
+Compra_FK int references Compra (Id_Compra),
+Cantidad int,
+PrecioCompra money,
+);
