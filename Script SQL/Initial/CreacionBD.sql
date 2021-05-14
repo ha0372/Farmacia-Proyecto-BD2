@@ -12,21 +12,22 @@ create table Venta (
     Id_Venta  int not null identity primary key,
 	Precio money,
 	nombre varchar(50),
-	fecha date
+	fecha datetime NOT NULL DEFAULT GETDATE()
 );
 
 create table Compra(
 Id_Compra int not null identity primary key,
 FormaPago money,
 Facturacion int,
-fecha date
+fecha datetime NOT NULL DEFAULT GETDATE()
 );
+
 
 create table historial(
 Id_Historial int not null identity primary key,
 Cantidad int,
 Nombre varchar(100),
-Fecha date
+Fecha datetime NOT NULL DEFAULT GETDATE()
 );
 
 create table Linea(
