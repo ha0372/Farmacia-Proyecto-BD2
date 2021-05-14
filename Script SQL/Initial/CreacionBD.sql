@@ -10,23 +10,20 @@ go
 --TABLAS INDEPENDIENTES
 create table Venta (
     Id_Venta  int not null identity primary key,
-	Precio money,
-	nombre varchar(50),
-	fecha datetime NOT NULL DEFAULT GETDATE()
+	Cliente varchar(75),
+	Fecha datetime NOT NULL DEFAULT GETDATE()
 );
 
 create table Compra(
 Id_Compra int not null identity primary key,
-FormaPago money,
-Facturacion int,
+Laboratorio varchar(75),
 fecha datetime NOT NULL DEFAULT GETDATE()
 );
 
 
-create table historial(
+create table Historial(
 Id_Historial int not null identity primary key,
-Cantidad int,
-Nombre varchar(100),
+Descripcion varchar(100),
 Fecha datetime NOT NULL DEFAULT GETDATE()
 );
 
@@ -40,10 +37,10 @@ Nombre varchar (50)
 
 create table Producto(
 Id_Producto int not null identity primary key,
+Linea_FK int references Linea(Id_Linea),
 Nombre varchar(100),
 Precio money,
-Cantidad int,
-Linea_FK int references Linea(Id_Linea)
+Existencias int,
 
 );
 
@@ -55,11 +52,12 @@ Producto_FK int references Producto(Id_Producto),
 Cantidad int,
 PrecioVenta money,
 );
+
 create table DetalleCompra(
 
 Id_DetalleCompra int not null identity primary key,
-Producto_FK int references Producto(Id_Producto),
 Compra_FK int references Compra (Id_Compra),
+Producto_FK int references Producto(Id_Producto),
 Cantidad int,
 PrecioCompra money,
 );
