@@ -1,5 +1,7 @@
 use FarmaciaBD
 go
+
+
 CREATE PROCEDURE sp_InsertarLinea	
 		@nombreLinea varchar(50)
 	AS
@@ -32,11 +34,12 @@ CREATE PROCEDURE sp_ConsultarLineaId
 CREATE PROCEDURE sp_InsertarProducto	
 		@Nombre varchar(50),
 		@Precio money,
-		@Cantidad int
+		@Existencias int
+
 	AS
 	BEGIN
 		SET NOCOUNT ON;
-		Insert into Producto(nombre,Precio,Cantidad) values (@nombre,@Precio,@Cantidad)
+		Insert into Producto(nombre,Precio,) values (@nombre,@Precio,@Existencias)
 	END
 	GO
 --******************************************************************************************
