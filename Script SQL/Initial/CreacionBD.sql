@@ -11,26 +11,32 @@ go
 create table Venta (
     Id_Venta  int not null identity primary key,
 	Cliente varchar(75),
-	Fecha datetime NOT NULL DEFAULT GETDATE()
+	FechaVenta datetime NOT NULL DEFAULT GETDATE(),
+	--EstadoVenta int not null default 1
 );
 
 create table Compra(
 Id_Compra int not null identity primary key,
-Laboratorio varchar(75),
-fecha datetime NOT NULL DEFAULT GETDATE()
+FechaCompra datetime NOT NULL DEFAULT GETDATE(),
+EstadoCompra int not null default 1
 );
 
 
 create table Historial(
 Id_Historial int not null identity primary key,
 Descripcion varchar(100),
-Fecha datetime NOT NULL DEFAULT GETDATE()
+FechaSuceso datetime NOT NULL DEFAULT GETDATE()
 );
 
 create table Linea(
 Id_Linea int not null identity primary key,
-Nombre varchar (50)
+NombreLinea varchar (50)
+);
 
+create table Laboratorio(
+Id_Laboratorio int not null identity primary key,
+NombreLaboratorio varchar(75),
+--ContactoLaboratorio varchar(25)
 );
 
 --TABLAS DEPENDIENTES 
@@ -38,19 +44,18 @@ Nombre varchar (50)
 create table Producto(
 Id_Producto int not null identity primary key,
 Linea_FK int references Linea(Id_Linea),
-Nombre varchar(100),
-Precio money,
-Existencias int,
-
+Laboratorio_FK int references Laboratorio(Id_Laboratorio),
+NombreProducto varchar(100),
+PrecioProducto money,
+ExistenciasProductos int,
 );
 
 create table DetalleVenta(
-
 Id_DetalleVenta int not null identity primary key,
 Venta_FK int references Venta(Id_Venta),
 Producto_FK int references Producto(Id_Producto),
-Cantidad int,
-PrecioVenta money,
+CantidadVProducto int,
+TotalVenta money,
 );
 
 create table DetalleCompra(
@@ -58,6 +63,6 @@ create table DetalleCompra(
 Id_DetalleCompra int not null identity primary key,
 Compra_FK int references Compra (Id_Compra),
 Producto_FK int references Producto(Id_Producto),
-Cantidad int,
-PrecioCompra money,
+CantidadCProducto int,
+TotalCompra money,
 );

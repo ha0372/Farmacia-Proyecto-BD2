@@ -56,8 +56,29 @@ CREATE PROCEDURE sp_ConsultarVentaId
 
 
 --***************************************************************************************
+alter PROCEDURE sp_InsertDetalleVenta
+		
+		@Venta_Fk int,
+		@Producto_fk int,
+		@CantidadVProducto int,
+		@TotalVenta money
 
-exec sp_InsertVenta 'Maria54'
+	AS
+	BEGIN
+		SET NOCOUNT ON;
+		Insert into DetalleVenta(Venta_FK,Producto_FK,CantidadVProducto,TotalVenta) values (@Venta_Fk,@Producto_fk,@CantidadVProducto,@TotalVenta)
+	END
+	GO
+
+
+exec sp_InsertVenta 'Alex'
+exec sp_InsertDetalleVenta 4,1,400,50
+
+
+select * from Producto
+select * from Venta
+
+
 exec sp_DeleteVenta 2
 exec sp_UpdateVenta 'maria',1
 exec sp_ConsultarVenta
