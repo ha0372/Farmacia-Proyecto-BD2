@@ -17,7 +17,7 @@ namespace Proyecto_Farmacia_BD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmVenta());
+            Application.Run(new FrmLinea());
         }
     }
 }

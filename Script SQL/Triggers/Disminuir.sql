@@ -10,42 +10,8 @@ begin
 end
 GO
 
+--***************************************************************************************************
 
---Create TRIGGER DisminuirExistencias
---   ON  Venta
---   AFTER UPDATE
---AS 
---BEGIN
---	SET NOCOUNT ON;
---	Declare @id varchar(4), @estado varchar(4), @estadon int;
---	select @id=i.Id_Venta,@estado=i.EstadoVenta,@estadon=i.EstadoVenta from inserted i;
-
---	if	@estadon=2
---	    begin	
-
---			Declare @Cantidad int, @IdProducto int
---			Declare DisminuirProductos Cursor for Select CantidadVProducto, Producto_FK from DetalleVenta where Venta_FK=@id
-
---			Open DisminuirProductos
-
---			FETCH NEXT FROM DisminuirProductos INTO @Cantidad,@IdProducto
-
---			WHILE @@FETCH_STATUS = 0 
---			begin	
---				exec sp_DisminuirExistencias @Cantidad, @IdProducto
-
---			 FETCH NEXT FROM DisminuirProductos INTO @Cantidad,@IdProducto
---			end
-
---			CLOSE DisminuirProductos;  
-
---			DEALLOCATE DisminuirProductos;  
---		end
---END
---GO
-
-USE Venta
-go
 
 
 Create TRIGGER DisminuirProducto

@@ -9,7 +9,7 @@ begin
 	Update Producto set ExistenciasProductos = ExistenciasProductos + @cantidad where Id_Producto=@id
 end
 GO
-
+--*******************************************************************************************************************
 
 Create TRIGGER IncrementarExistencias
    ON  Compra

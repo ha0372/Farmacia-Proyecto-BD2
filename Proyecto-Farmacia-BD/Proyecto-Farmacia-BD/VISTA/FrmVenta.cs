@@ -28,7 +28,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             CDetalleVenta cDetalles = new CDetalleVenta();
             DetalleVenta detalles = new DetalleVenta();
 
-            //ventaBindingSource.EndEdit();
+            ventaBindingSource.EndEdit();
             //venta = (Venta)ventaBindingSource.Current;
 
             detalleVentaBindingSource.EndEdit();

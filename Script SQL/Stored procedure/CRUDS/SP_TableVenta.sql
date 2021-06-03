@@ -96,9 +96,21 @@ CREATE PROCEDURE sp_ConsultarDetalleVenta
 	GO
 
 
-Insert into Venta(Cliente)  values('Javier')
-Insert into DetalleVenta(Venta_FK, Producto_FK,CantidadVProducto,TotalVenta)  values(8,1,500,750)
+Insert into Venta(Cliente)  values('Alex')
+Insert into DetalleVenta(Venta_FK, Producto_FK,CantidadVProducto,TotalVenta)  values(1,1,500,750)
 
 
 select * from Producto
 select * from Venta
+
+
+CREATE PROCEDURE sp_ConsultarLinea
+		
+	AS
+	BEGIN
+		SET NOCOUNT ON;
+		Select * from  Linea
+	END
+	GO
+
+	Select * from  Laboratorio
