@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Farmacia_BD.ENTIDADES
 {
-    class Compra
+    public class Compra
     {
+
+            public int Id_Compra { get; set; }
+            public DateTime FechaCompra { get; set; }
+            public int EstadoCompra { get; set; }
+        
     }
 }

@@ -48,7 +48,7 @@ USE Venta
 go
 
 
-Alter TRIGGER DisminuirProducto
+Create TRIGGER DisminuirProducto
 
    ON  DetalleVenta
    AFTER INSERT

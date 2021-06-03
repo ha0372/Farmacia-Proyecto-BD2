@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_Farmacia_BD.VISTA;
 
 namespace Proyecto_Farmacia_BD
 {
@@ -16,7 +17,7 @@ namespace Proyecto_Farmacia_BD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmVenta());
         }
     }
 }

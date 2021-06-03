@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Farmacia_BD.ENTIDADES
 {
-    class Historial
+    public class Laboratorio
     {
+        public int Id_Laboratorio { get; set; }
+        public string NombreLaboratorio { get; set; }
     }
+
 }

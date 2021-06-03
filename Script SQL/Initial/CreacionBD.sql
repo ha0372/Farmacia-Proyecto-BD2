@@ -11,13 +11,13 @@ go
 create table Venta (
     Id_Venta  int not null identity primary key,
 	Cliente varchar(75),
-	FechaVenta datetime NOT NULL DEFAULT GETDATE(),
+	FechaVenta date NOT NULL DEFAULT GETDATE(),
 	--EstadoVenta int not null default 1
 );
 
 create table Compra(
 Id_Compra int not null identity primary key,
-FechaCompra datetime NOT NULL DEFAULT GETDATE(),
+FechaCompra date NOT NULL DEFAULT GETDATE(),
 EstadoCompra int not null default 1
 );
 
@@ -25,7 +25,7 @@ EstadoCompra int not null default 1
 create table Historial(
 Id_Historial int not null identity primary key,
 Descripcion varchar(100),
-FechaSuceso datetime NOT NULL DEFAULT GETDATE()
+FechaSuceso date NOT NULL DEFAULT GETDATE()
 );
 
 create table Linea(
