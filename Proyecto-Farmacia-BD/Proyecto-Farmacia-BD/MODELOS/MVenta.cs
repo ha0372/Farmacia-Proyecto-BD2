@@ -34,7 +34,7 @@ namespace Proyecto_Farmacia_BD.MODELOS
             DynamicParameters parametros = new DynamicParameters();
 
             parametros.Add("@Cliente", venta.Cliente, DbType.String);
-            parametros.Add("@FechaVenta", venta.FechaVenta, DbType.DateTime);
+            parametros.Add("@FechaVenta", venta.FechaVenta, DbType.DateTime2);
 
 
             cn.Open();

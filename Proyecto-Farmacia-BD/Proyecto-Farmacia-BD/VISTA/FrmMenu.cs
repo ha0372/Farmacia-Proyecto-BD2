@@ -78,7 +78,7 @@ namespace ProyectoFinal.VISTA
 
         private void btnHorarios_Click(object sender, EventArgs e)
         {
-            //AbrirFormulario<FrmHorarios>();
+            AbrirFormulario<FrmPrincipalLaboratorio>();
 
         }
 
@@ -103,6 +103,11 @@ namespace ProyectoFinal.VISTA
             MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmPrincilaVenta>();
         }
 
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()

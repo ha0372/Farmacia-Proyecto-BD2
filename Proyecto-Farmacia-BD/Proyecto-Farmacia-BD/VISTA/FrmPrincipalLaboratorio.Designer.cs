@@ -35,30 +35,34 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.laboratorioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnEliminarLaboratorio = new System.Windows.Forms.Button();
+            this.btnActualizarLaboratorio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.laboratorioDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.laboratorioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIngresarNLaboratorio
             // 
-            this.btnIngresarNLaboratorio.Location = new System.Drawing.Point(31, 31);
+            this.btnIngresarNLaboratorio.Location = new System.Drawing.Point(30, 45);
             this.btnIngresarNLaboratorio.Name = "btnIngresarNLaboratorio";
-            this.btnIngresarNLaboratorio.Size = new System.Drawing.Size(113, 78);
+            this.btnIngresarNLaboratorio.Size = new System.Drawing.Size(164, 78);
             this.btnIngresarNLaboratorio.TabIndex = 0;
             this.btnIngresarNLaboratorio.Text = "Ingresar Nuevo Laboratorio";
             this.btnIngresarNLaboratorio.UseVisualStyleBackColor = true;
+            this.btnIngresarNLaboratorio.Click += new System.EventHandler(this.btnIngresarNLaboratorio_Click);
             // 
             // laboratorioDataGridView
             // 
             this.laboratorioDataGridView.AutoGenerateColumns = false;
+            this.laboratorioDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.laboratorioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.laboratorioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.laboratorioDataGridView.DataSource = this.laboratorioBindingSource;
-            this.laboratorioDataGridView.Location = new System.Drawing.Point(198, 155);
+            this.laboratorioDataGridView.Location = new System.Drawing.Point(129, 352);
             this.laboratorioDataGridView.Name = "laboratorioDataGridView";
-            this.laboratorioDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.laboratorioDataGridView.Size = new System.Drawing.Size(542, 220);
             this.laboratorioDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -77,15 +81,36 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             this.laboratorioBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.Laboratorio);
             // 
+            // btnEliminarLaboratorio
+            // 
+            this.btnEliminarLaboratorio.Location = new System.Drawing.Point(595, 45);
+            this.btnEliminarLaboratorio.Name = "btnEliminarLaboratorio";
+            this.btnEliminarLaboratorio.Size = new System.Drawing.Size(167, 78);
+            this.btnEliminarLaboratorio.TabIndex = 3;
+            this.btnEliminarLaboratorio.Text = "Eliminar Laboratorio";
+            this.btnEliminarLaboratorio.UseVisualStyleBackColor = true;
+            // 
+            // btnActualizarLaboratorio
+            // 
+            this.btnActualizarLaboratorio.Location = new System.Drawing.Point(320, 45);
+            this.btnActualizarLaboratorio.Name = "btnActualizarLaboratorio";
+            this.btnActualizarLaboratorio.Size = new System.Drawing.Size(167, 78);
+            this.btnActualizarLaboratorio.TabIndex = 4;
+            this.btnActualizarLaboratorio.Text = "Actualizar Laboratorio";
+            this.btnActualizarLaboratorio.UseVisualStyleBackColor = true;
+            // 
             // FrmPrincipalLaboratorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 477);
+            this.ClientSize = new System.Drawing.Size(850, 602);
+            this.Controls.Add(this.btnActualizarLaboratorio);
+            this.Controls.Add(this.btnEliminarLaboratorio);
             this.Controls.Add(this.laboratorioDataGridView);
             this.Controls.Add(this.btnIngresarNLaboratorio);
             this.Name = "FrmPrincipalLaboratorio";
             this.Text = "FrmPrincipalLaboratorio";
+            this.Load += new System.EventHandler(this.FrmPrincipalLaboratorio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.laboratorioDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.laboratorioBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -99,5 +124,7 @@ namespace Proyecto_Farmacia_BD.VISTA
         private System.Windows.Forms.DataGridView laboratorioDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Button btnEliminarLaboratorio;
+        private System.Windows.Forms.Button btnActualizarLaboratorio;
     }
 }

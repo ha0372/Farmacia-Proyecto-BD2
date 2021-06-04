@@ -38,6 +38,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             System.Windows.Forms.Label clienteLabel;
             System.Windows.Forms.Label fechaVentaLabel;
             this.venta_FKTextBox = new System.Windows.Forms.TextBox();
+            this.detalleVentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.producto_FKTextBox = new System.Windows.Forms.TextBox();
             this.cantidadVProductoTextBox = new System.Windows.Forms.TextBox();
             this.totalVentaTextBox = new System.Windows.Forms.TextBox();
@@ -46,10 +47,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.clienteTextBox = new System.Windows.Forms.TextBox();
             this.fechaVentaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.detalleVentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTextBox = new System.Windows.Forms.TextBox();
             venta_FKLabel = new System.Windows.Forms.Label();
             producto_FKLabel = new System.Windows.Forms.Label();
             cantidadVProductoLabel = new System.Windows.Forms.Label();
@@ -57,10 +57,10 @@ namespace Proyecto_Farmacia_BD.VISTA
             label1 = new System.Windows.Forms.Label();
             clienteLabel = new System.Windows.Forms.Label();
             fechaVentaLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.detalleVentaBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detalleVentaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // venta_FKLabel
@@ -117,6 +117,15 @@ namespace Proyecto_Farmacia_BD.VISTA
             clienteLabel.TabIndex = 2;
             clienteLabel.Text = "Cliente:";
             // 
+            // fechaVentaLabel
+            // 
+            fechaVentaLabel.AutoSize = true;
+            fechaVentaLabel.Location = new System.Drawing.Point(442, 43);
+            fechaVentaLabel.Name = "fechaVentaLabel";
+            fechaVentaLabel.Size = new System.Drawing.Size(71, 13);
+            fechaVentaLabel.TabIndex = 4;
+            fechaVentaLabel.Text = "Fecha Venta:";
+            // 
             // venta_FKTextBox
             // 
             this.venta_FKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.detalleVentaBindingSource, "Venta_FK", true));
@@ -124,6 +133,10 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.venta_FKTextBox.Name = "venta_FKTextBox";
             this.venta_FKTextBox.Size = new System.Drawing.Size(100, 20);
             this.venta_FKTextBox.TabIndex = 2;
+            // 
+            // detalleVentaBindingSource
+            // 
+            this.detalleVentaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.DetalleVenta);
             // 
             // producto_FKTextBox
             // 
@@ -151,9 +164,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(635, 300);
+            this.btnAgregar.Location = new System.Drawing.Point(289, 407);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(123, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(212, 57);
             this.btnAgregar.TabIndex = 8;
             this.btnAgregar.Text = "Registrar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -208,23 +221,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Venta";
             // 
-            // clienteTextBox
-            // 
-            this.clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ventaBindingSource, "Cliente", true));
-            this.clienteTextBox.Location = new System.Drawing.Point(289, 40);
-            this.clienteTextBox.Name = "clienteTextBox";
-            this.clienteTextBox.Size = new System.Drawing.Size(115, 20);
-            this.clienteTextBox.TabIndex = 3;
-            // 
-            // fechaVentaLabel
-            // 
-            fechaVentaLabel.AutoSize = true;
-            fechaVentaLabel.Location = new System.Drawing.Point(442, 43);
-            fechaVentaLabel.Name = "fechaVentaLabel";
-            fechaVentaLabel.Size = new System.Drawing.Size(71, 13);
-            fechaVentaLabel.TabIndex = 4;
-            fechaVentaLabel.Text = "Fecha Venta:";
-            // 
             // fechaVentaDateTimePicker
             // 
             this.fechaVentaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ventaBindingSource, "FechaVenta", true));
@@ -240,9 +236,13 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             this.ventaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.Venta);
             // 
-            // detalleVentaBindingSource
+            // clienteTextBox
             // 
-            this.detalleVentaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.DetalleVenta);
+            this.clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ventaBindingSource, "Cliente", true));
+            this.clienteTextBox.Location = new System.Drawing.Point(289, 40);
+            this.clienteTextBox.Name = "clienteTextBox";
+            this.clienteTextBox.Size = new System.Drawing.Size(115, 20);
+            this.clienteTextBox.TabIndex = 3;
             // 
             // FrmVenta
             // 
@@ -255,12 +255,12 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.Name = "FrmVenta";
             this.Text = "FrmVenta";
             this.Load += new System.EventHandler(this.FrmVenta_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.detalleVentaBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detalleVentaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

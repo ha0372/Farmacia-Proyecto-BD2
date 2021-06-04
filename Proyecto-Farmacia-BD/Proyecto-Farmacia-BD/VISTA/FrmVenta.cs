@@ -23,18 +23,18 @@ namespace Proyecto_Farmacia_BD.VISTA
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            //CVenta cVenta = new CVenta();
-            //Venta venta = new Venta();
+            CVenta cVenta = new CVenta();
+            Venta venta = new Venta();
             CDetalleVenta cDetalles = new CDetalleVenta();
             DetalleVenta detalles = new DetalleVenta();
 
             ventaBindingSource.EndEdit();
-            //venta = (Venta)ventaBindingSource.Current;
+            venta = (Venta)ventaBindingSource.Current;
 
             detalleVentaBindingSource.EndEdit();
             detalles = (DetalleVenta)detalleVentaBindingSource.Current;
 
-            //cVenta.IngresarVentas(venta);
+            cVenta.IngresarVentas(venta);
             cDetalles.IngresarVenta(detalles);
 
             this.Close();

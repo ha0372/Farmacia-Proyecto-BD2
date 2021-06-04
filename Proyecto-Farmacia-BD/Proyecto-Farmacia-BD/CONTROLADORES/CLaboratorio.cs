@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Farmacia_BD.CONTROLADORES
 {
-    class CLaboratorio
+    public class CLaboratorio
     {
     }
 }

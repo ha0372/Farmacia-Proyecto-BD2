@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="CONTROLADORES\CDetalleVenta.cs" />
+    <Compile Include="CONTROLADORES\CLaboratorio.cs" />
     <Compile Include="CONTROLADORES\CLinea.cs" />
     <Compile Include="CONTROLADORES\CProducto.cs" />
     <Compile Include="CONTROLADORES\CVenta.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="ENTIDADES\Producto.cs" />
     <Compile Include="ENTIDADES\Venta.cs" />
     <Compile Include="MODELOS\MDetalleVenta.cs" />
+    <Compile Include="MODELOS\MLaboratorio.cs" />
     <Compile Include="MODELOS\MLinea.cs" />
     <Compile Include="MODELOS\MProducto.cs" />
     <Compile Include="MODELOS\MVenta.cs" />
@@ -103,6 +105,12 @@
     </Compile>
     <Compile Include="VISTA\FrmMenu.designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VISTA\FrmPrincilaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmPrincilaVenta.Designer.cs">
+      <DependentUpon>FrmPrincilaVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="VISTA\FrmPrincipalLaboratorio.cs">
       <SubType>Form</SubType>
@@ -154,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmPrincilaVenta.resx">
+      <DependentUpon>FrmPrincilaVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmPrincipalLaboratorio.resx">
       <DependentUpon>FrmPrincipalLaboratorio.cs</DependentUpon>

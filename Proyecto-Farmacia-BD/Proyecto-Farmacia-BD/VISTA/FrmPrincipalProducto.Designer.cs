@@ -31,7 +31,6 @@ namespace Proyecto_Farmacia_BD.VISTA
         {
             this.components = new System.ComponentModel.Container();
             this.productoDataGridView = new System.Windows.Forms.DataGridView();
-            this.btnRegistrarNuevo = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +38,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnRegistrarNuevo = new System.Windows.Forms.Button();
+            this.btnEliminarProductos = new System.Windows.Forms.Button();
+            this.btnActualizarProducto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productoDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -60,16 +62,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.productoDataGridView.Name = "productoDataGridView";
             this.productoDataGridView.Size = new System.Drawing.Size(721, 213);
             this.productoDataGridView.TabIndex = 1;
-            // 
-            // btnRegistrarNuevo
-            // 
-            this.btnRegistrarNuevo.Location = new System.Drawing.Point(43, 56);
-            this.btnRegistrarNuevo.Name = "btnRegistrarNuevo";
-            this.btnRegistrarNuevo.Size = new System.Drawing.Size(148, 60);
-            this.btnRegistrarNuevo.TabIndex = 2;
-            this.btnRegistrarNuevo.Text = "Registrar Nuevo Producto";
-            this.btnRegistrarNuevo.UseVisualStyleBackColor = true;
-            this.btnRegistrarNuevo.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -111,11 +103,41 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             this.productoBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.Producto);
             // 
+            // btnRegistrarNuevo
+            // 
+            this.btnRegistrarNuevo.Location = new System.Drawing.Point(43, 56);
+            this.btnRegistrarNuevo.Name = "btnRegistrarNuevo";
+            this.btnRegistrarNuevo.Size = new System.Drawing.Size(148, 60);
+            this.btnRegistrarNuevo.TabIndex = 2;
+            this.btnRegistrarNuevo.Text = "Registrar Nuevo Producto";
+            this.btnRegistrarNuevo.UseVisualStyleBackColor = true;
+            this.btnRegistrarNuevo.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnEliminarProductos
+            // 
+            this.btnEliminarProductos.Location = new System.Drawing.Point(698, 56);
+            this.btnEliminarProductos.Name = "btnEliminarProductos";
+            this.btnEliminarProductos.Size = new System.Drawing.Size(196, 60);
+            this.btnEliminarProductos.TabIndex = 3;
+            this.btnEliminarProductos.Text = "Eliminar Productos";
+            this.btnEliminarProductos.UseVisualStyleBackColor = true;
+            // 
+            // btnActualizarProducto
+            // 
+            this.btnActualizarProducto.Location = new System.Drawing.Point(395, 56);
+            this.btnActualizarProducto.Name = "btnActualizarProducto";
+            this.btnActualizarProducto.Size = new System.Drawing.Size(158, 60);
+            this.btnActualizarProducto.TabIndex = 4;
+            this.btnActualizarProducto.Text = "Actualizar Producto";
+            this.btnActualizarProducto.UseVisualStyleBackColor = true;
+            // 
             // FrmPrincipalProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 556);
+            this.Controls.Add(this.btnActualizarProducto);
+            this.Controls.Add(this.btnEliminarProductos);
             this.Controls.Add(this.btnRegistrarNuevo);
             this.Controls.Add(this.productoDataGridView);
             this.Name = "FrmPrincipalProducto";
@@ -138,5 +160,7 @@ namespace Proyecto_Farmacia_BD.VISTA
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Button btnRegistrarNuevo;
+        private System.Windows.Forms.Button btnEliminarProductos;
+        private System.Windows.Forms.Button btnActualizarProducto;
     }
 }
