@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Farmacia_BD.VISTA
 {
-    public partial class FrmProductos : Form
+    public partial class FrmCrearLaboratorio : Form
     {
-        public FrmProductos()
+        public FrmCrearLaboratorio()
         {
             InitializeComponent();
         }

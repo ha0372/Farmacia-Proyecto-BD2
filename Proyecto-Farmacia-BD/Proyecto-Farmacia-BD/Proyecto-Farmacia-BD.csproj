@@ -53,6 +53,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="CONTROLADORES\CDetalleVenta.cs" />
     <Compile Include="CONTROLADORES\CLinea.cs" />
+    <Compile Include="CONTROLADORES\CProducto.cs" />
     <Compile Include="CONTROLADORES\CVenta.cs" />
     <Compile Include="ENTIDADES\Compra.cs" />
     <Compile Include="ENTIDADES\DetalleCompra.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="ENTIDADES\Venta.cs" />
     <Compile Include="MODELOS\MDetalleVenta.cs" />
     <Compile Include="MODELOS\MLinea.cs" />
+    <Compile Include="MODELOS\MProducto.cs" />
     <Compile Include="MODELOS\MVenta.cs" />
     <Compile Include="VISTA\Form1.cs">
       <SubType>Form</SubType>
@@ -78,23 +80,47 @@
     <Compile Include="VISTA\FrmCompra.Designer.cs">
       <DependentUpon>FrmCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="VISTA\FrmCrearLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmCrearLaboratorio.Designer.cs">
+      <DependentUpon>FrmCrearLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VISTA\FrmCrearProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmCrearProducto.Designer.cs">
+      <DependentUpon>FrmCrearProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="VISTA\FrmLinea.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VISTA\FrmLinea.Designer.cs">
       <DependentUpon>FrmLinea.cs</DependentUpon>
     </Compile>
-    <Compile Include="VISTA\FrmListadoProductos.cs">
+    <Compile Include="VISTA\FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VISTA\FrmListadoProductos.Designer.cs">
-      <DependentUpon>FrmListadoProductos.cs</DependentUpon>
+    <Compile Include="VISTA\FrmMenu.designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="VISTA\FrmProductos.cs">
+    <Compile Include="VISTA\FrmPrincipalLaboratorio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VISTA\FrmProductos.Designer.cs">
-      <DependentUpon>FrmProductos.cs</DependentUpon>
+    <Compile Include="VISTA\FrmPrincipalLaboratorio.Designer.cs">
+      <DependentUpon>FrmPrincipalLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VISTA\FrmPrincipalLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmPrincipalLinea.Designer.cs">
+      <DependentUpon>FrmPrincipalLinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VISTA\FrmPrincipalProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmPrincipalProducto.Designer.cs">
+      <DependentUpon>FrmPrincipalProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="VISTA\FrmVenta.cs">
       <SubType>Form</SubType>
@@ -117,8 +143,26 @@
     <EmbeddedResource Include="VISTA\FrmCompra.resx">
       <DependentUpon>FrmCompra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmCrearLaboratorio.resx">
+      <DependentUpon>FrmCrearLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmCrearProducto.resx">
+      <DependentUpon>FrmCrearProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmLinea.resx">
       <DependentUpon>FrmLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmPrincipalLaboratorio.resx">
+      <DependentUpon>FrmPrincipalLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmPrincipalLinea.resx">
+      <DependentUpon>FrmPrincipalLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmPrincipalProducto.resx">
+      <DependentUpon>FrmPrincipalProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmVenta.resx">
       <DependentUpon>FrmVenta.cs</DependentUpon>
