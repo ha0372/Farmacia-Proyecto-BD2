@@ -47,6 +47,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // productoDataGridView
             // 
+            this.productoDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.productoDataGridView.AutoGenerateColumns = false;
             this.productoDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.productoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -58,9 +61,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.productoDataGridView.DataSource = this.productoBindingSource;
-            this.productoDataGridView.Location = new System.Drawing.Point(103, 357);
+            this.productoDataGridView.Location = new System.Drawing.Point(32, 259);
             this.productoDataGridView.Name = "productoDataGridView";
-            this.productoDataGridView.Size = new System.Drawing.Size(721, 213);
+            this.productoDataGridView.Size = new System.Drawing.Size(961, 285);
             this.productoDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -105,7 +108,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // btnRegistrarNuevo
             // 
-            this.btnRegistrarNuevo.Location = new System.Drawing.Point(43, 56);
+            this.btnRegistrarNuevo.Location = new System.Drawing.Point(114, 74);
             this.btnRegistrarNuevo.Name = "btnRegistrarNuevo";
             this.btnRegistrarNuevo.Size = new System.Drawing.Size(148, 60);
             this.btnRegistrarNuevo.TabIndex = 2;
@@ -115,7 +118,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // btnEliminarProductos
             // 
-            this.btnEliminarProductos.Location = new System.Drawing.Point(698, 56);
+            this.btnEliminarProductos.Location = new System.Drawing.Point(418, 74);
             this.btnEliminarProductos.Name = "btnEliminarProductos";
             this.btnEliminarProductos.Size = new System.Drawing.Size(196, 60);
             this.btnEliminarProductos.TabIndex = 3;
@@ -124,7 +127,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // btnActualizarProducto
             // 
-            this.btnActualizarProducto.Location = new System.Drawing.Point(395, 56);
+            this.btnActualizarProducto.Location = new System.Drawing.Point(791, 153);
             this.btnActualizarProducto.Name = "btnActualizarProducto";
             this.btnActualizarProducto.Size = new System.Drawing.Size(158, 60);
             this.btnActualizarProducto.TabIndex = 4;

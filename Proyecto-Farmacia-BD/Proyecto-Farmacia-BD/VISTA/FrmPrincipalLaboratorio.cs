@@ -17,19 +17,21 @@ namespace Proyecto_Farmacia_BD.VISTA
         {
             InitializeComponent();
         }
-        FrmCrearLaboratorio cLaboratorio = new FrmCrearLaboratorio();
+
+        CLaboratorio cLaboratorio = new CLaboratorio();
 
         private void btnIngresarNLaboratorio_Click(object sender, EventArgs e)
         {
-            laboratorioBindingSource.DataSource = cLaboratorio.();
+            FrmCrearLaboratorio laboratorio = new FrmCrearLaboratorio();
+            laboratorio.ShowDialog();
+            laboratorioBindingSource.DataSource = null;
+            laboratorioBindingSource.DataSource = cLaboratorio.Consultar();
         }
 
         private void FrmPrincipalLaboratorio_Load(object sender, EventArgs e)
         {
-            FrmLinea linea = new FrmLinea();
-            linea.ShowDialog();
-            lineaBindingSource.DataSource = null;
-            lineaBindingSource.DataSource = cLinea.Consultar();
+            
+            laboratorioBindingSource.DataSource = cLaboratorio.Consultar();
         }
     }
 }

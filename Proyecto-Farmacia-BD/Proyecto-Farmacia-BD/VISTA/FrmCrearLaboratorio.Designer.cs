@@ -33,6 +33,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             System.Windows.Forms.Label nombreLaboratorioLabel;
             this.nombreLaboratorioTextBox = new System.Windows.Forms.TextBox();
             this.laboratorioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnRegistrar = new System.Windows.Forms.Button();
             nombreLaboratorioLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.laboratorioBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -58,15 +59,27 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             this.laboratorioBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.Laboratorio);
             // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Location = new System.Drawing.Point(117, 206);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(95, 34);
+            this.btnRegistrar.TabIndex = 3;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
             // FrmCrearLaboratorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 450);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(nombreLaboratorioLabel);
             this.Controls.Add(this.nombreLaboratorioTextBox);
             this.Name = "FrmCrearLaboratorio";
             this.Text = "FrmCrearLaboratorio";
+            this.Load += new System.EventHandler(this.FrmCrearLaboratorio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.laboratorioBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -77,5 +90,6 @@ namespace Proyecto_Farmacia_BD.VISTA
 
         private System.Windows.Forms.BindingSource laboratorioBindingSource;
         private System.Windows.Forms.TextBox nombreLaboratorioTextBox;
+        private System.Windows.Forms.Button btnRegistrar;
     }
 }

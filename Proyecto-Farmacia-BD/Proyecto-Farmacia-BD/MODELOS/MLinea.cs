@@ -40,5 +40,27 @@ namespace Proyecto_Farmacia_BD.MODELOS
             cn.Execute(consulta, parametros, commandType: CommandType.Text);
             cn.Close();
         }
+
+        public void Actualizar(Linea linea)
+        {
+            string consulta = "Update Linea set NombreLinea='" + linea.NombreLinea + "'where Id_Linea=" + linea.Id_Linea;
+
+            cn.Open();
+            cn.Execute(consulta);
+            cn.Close();
+
+        }
+
+        public void Eliminar(Linea linea)
+        {
+            string consulta = "Delete from Linea where Id_Linea=" + linea.Id_Linea;
+
+            cn.Open();
+            cn.Execute(consulta);
+            cn.Close();
+
+        }
+
+
     }
 }

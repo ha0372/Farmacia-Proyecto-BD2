@@ -76,6 +76,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VISTA\FrmActualizarLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmActualizarLinea.Designer.cs">
+      <DependentUpon>FrmActualizarLinea.cs</DependentUpon>
+    </Compile>
     <Compile Include="VISTA\FrmCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VISTA\FrmActualizarLinea.resx">
+      <DependentUpon>FrmActualizarLinea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmCompra.resx">
       <DependentUpon>FrmCompra.cs</DependentUpon>
     </EmbeddedResource>

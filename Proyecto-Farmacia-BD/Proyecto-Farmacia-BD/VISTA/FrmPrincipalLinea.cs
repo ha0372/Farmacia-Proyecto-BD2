@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_Farmacia_BD.CONTROLADORES;
+using Proyecto_Farmacia_BD.ENTIDADES;
 
 namespace Proyecto_Farmacia_BD.VISTA
 {
@@ -30,6 +31,36 @@ namespace Proyecto_Farmacia_BD.VISTA
             linea.ShowDialog();
             lineaBindingSource.DataSource = null;
             lineaBindingSource.DataSource = cLinea.Consultar();
+        }
+
+        private void btnEliminarLinea_Click(object sender, EventArgs e)
+        {
+            Linea linea = new Linea();
+
+            lineaBindingSource.EndEdit();
+
+            lineaBindingSource.EndEdit();
+            linea = (Linea)lineaBindingSource.Current;
+
+            cLinea.EliminarLinea(linea);
+
+            lineaBindingSource.DataSource = cLinea.Consultar();
+        }
+
+        private void btnActualizarLinea_Click(object sender, EventArgs e)
+        {
+
+            Linea linea = new Linea();
+
+            lineaBindingSource.EndEdit();
+
+            lineaBindingSource.EndEdit();
+            linea = (Linea)lineaBindingSource.Current;
+
+            cLinea.ActualizarLinea(linea);
+
+            lineaBindingSource.DataSource = cLinea.Consultar();
+
         }
     }
 }

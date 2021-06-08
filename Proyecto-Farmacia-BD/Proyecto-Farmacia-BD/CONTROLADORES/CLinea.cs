@@ -20,5 +20,13 @@ namespace Proyecto_Farmacia_BD.CONTROLADORES
         {
             mLinea.insertar(linea);
         }
+        public void ActualizarLinea(Linea linea)
+        {
+            mLinea.Actualizar(linea);
+        }
+        public void EliminarLinea(Linea linea)
+        {
+            mLinea.Eliminar(linea);
+        }
     }
 }

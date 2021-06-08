@@ -31,24 +31,24 @@ namespace Proyecto_Farmacia_BD.VISTA
         {
             this.components = new System.ComponentModel.Container();
             this.ventaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detalleVentaDataGridView = new System.Windows.Forms.DataGridView();
-            this.btnIngresarVenta = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnEliminarVenta = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.detalleVentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnIngresarVenta = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnEliminarVenta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ventaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detalleVentaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detalleVentaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ventaDataGridView
@@ -69,8 +69,36 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.ventaDataGridView.Size = new System.Drawing.Size(393, 220);
             this.ventaDataGridView.TabIndex = 1;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_Venta";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id_Venta";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Cliente";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Cliente";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "FechaVenta";
+            this.dataGridViewTextBoxColumn3.HeaderText = "FechaVenta";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // ventaBindingSource
+            // 
+            this.ventaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.Venta);
+            // 
             // detalleVentaDataGridView
             // 
+            this.detalleVentaDataGridView.AllowUserToAddRows = false;
+            this.detalleVentaDataGridView.AllowUserToDeleteRows = false;
             this.detalleVentaDataGridView.AutoGenerateColumns = false;
             this.detalleVentaDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.detalleVentaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -83,8 +111,48 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.detalleVentaDataGridView.DataSource = this.detalleVentaBindingSource;
             this.detalleVentaDataGridView.Location = new System.Drawing.Point(400, 249);
             this.detalleVentaDataGridView.Name = "detalleVentaDataGridView";
+            this.detalleVentaDataGridView.ReadOnly = true;
             this.detalleVentaDataGridView.Size = new System.Drawing.Size(582, 220);
             this.detalleVentaDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id_DetalleVenta";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Id_DetalleVenta";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Venta_FK";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Venta_FK";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Producto_FK";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Producto_FK";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "CantidadVProducto";
+            this.dataGridViewTextBoxColumn7.HeaderText = "CantidadVProducto";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "TotalVenta";
+            this.dataGridViewTextBoxColumn8.HeaderText = "TotalVenta";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // detalleVentaBindingSource
+            // 
+            this.detalleVentaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.DetalleVenta);
             // 
             // btnIngresarVenta
             // 
@@ -114,66 +182,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.btnEliminarVenta.Text = "Eliminar Venta";
             this.btnEliminarVenta.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id_DetalleVenta";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Id_DetalleVenta";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Venta_FK";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Venta_FK";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Producto_FK";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Producto_FK";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "CantidadVProducto";
-            this.dataGridViewTextBoxColumn7.HeaderText = "CantidadVProducto";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "TotalVenta";
-            this.dataGridViewTextBoxColumn8.HeaderText = "TotalVenta";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // detalleVentaBindingSource
-            // 
-            this.detalleVentaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.DetalleVenta);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_Venta";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id_Venta";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Cliente";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Cliente";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "FechaVenta";
-            this.dataGridViewTextBoxColumn3.HeaderText = "FechaVenta";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // ventaBindingSource
-            // 
-            this.ventaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.Venta);
-            // 
             // FrmPrincilaVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,9 +196,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.Text = "FrmPrincilaVenta";
             this.Load += new System.EventHandler(this.FrmPrincilaVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ventaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detalleVentaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detalleVentaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

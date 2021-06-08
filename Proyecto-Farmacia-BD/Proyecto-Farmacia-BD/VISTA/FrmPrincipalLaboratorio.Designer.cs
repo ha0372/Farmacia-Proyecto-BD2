@@ -53,6 +53,8 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // laboratorioDataGridView
             // 
+            this.laboratorioDataGridView.AllowUserToAddRows = false;
+            this.laboratorioDataGridView.AllowUserToDeleteRows = false;
             this.laboratorioDataGridView.AutoGenerateColumns = false;
             this.laboratorioDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.laboratorioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -62,6 +64,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.laboratorioDataGridView.DataSource = this.laboratorioBindingSource;
             this.laboratorioDataGridView.Location = new System.Drawing.Point(129, 352);
             this.laboratorioDataGridView.Name = "laboratorioDataGridView";
+            this.laboratorioDataGridView.ReadOnly = true;
             this.laboratorioDataGridView.Size = new System.Drawing.Size(542, 220);
             this.laboratorioDataGridView.TabIndex = 2;
             // 
@@ -70,12 +73,14 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_Laboratorio";
             this.dataGridViewTextBoxColumn1.HeaderText = "Id_Laboratorio";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "NombreLaboratorio";
             this.dataGridViewTextBoxColumn2.HeaderText = "NombreLaboratorio";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // laboratorioBindingSource
             // 

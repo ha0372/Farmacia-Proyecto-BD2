@@ -143,8 +143,6 @@ namespace ProyectoFinal.VISTA
                 btnNotas.BackColor = Color.FromArgb(176, 196, 222);
             if (Application.OpenForms["FrmHorarios"] == null)
                 btnHorarios.BackColor = Color.FromArgb(176, 196, 222);
-            if (Application.OpenForms["FrmConfiguracion"] == null)
-                btnSetting.BackColor = Color.FromArgb(176, 196, 222);
 
         }
 

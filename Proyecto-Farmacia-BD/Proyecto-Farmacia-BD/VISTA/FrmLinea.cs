@@ -22,22 +22,19 @@ namespace Proyecto_Farmacia_BD.VISTA
 
         private void FrmLinea_Load(object sender, EventArgs e)
         {
-            //lineaBindingSource.DataSource = cLinea.Consultar();
             lineaBindingSource.AddNew();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //CDetalleVenta cDetalles = new CDetalleVenta();
+
             Linea linea = new Linea();
 
             lineaBindingSource.EndEdit();
-            //venta = (Venta)ventaBindingSource.Current;
 
             lineaBindingSource.EndEdit();
             linea = (Linea)lineaBindingSource.Current;
 
-            //cVenta.IngresarVentas(venta);
             cLinea.IngresarLinea(linea);
 
             this.Close();

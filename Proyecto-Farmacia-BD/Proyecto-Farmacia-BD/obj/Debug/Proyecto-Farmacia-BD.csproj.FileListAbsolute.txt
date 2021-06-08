@@ -21,3 +21,4 @@ C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proye
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmCrearLaboratorio.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmPrincipalLaboratorio.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmPrincilaVenta.resources
+C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmActualizarLinea.resources

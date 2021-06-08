@@ -36,9 +36,7 @@ namespace ProyectoFinal.VISTA
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnPrincipal = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
             this.btnHorarios = new System.Windows.Forms.Button();
             this.btnNotas = new System.Windows.Forms.Button();
             this.panelTitulo = new System.Windows.Forms.Panel();
@@ -109,9 +107,7 @@ namespace ProyectoFinal.VISTA
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panelMenu.Controls.Add(this.button1);
-            this.panelMenu.Controls.Add(this.btnCerrarSesion);
             this.panelMenu.Controls.Add(this.btnPrincipal);
-            this.panelMenu.Controls.Add(this.btnSetting);
             this.panelMenu.Controls.Add(this.btnHorarios);
             this.panelMenu.Controls.Add(this.btnNotas);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -131,33 +127,15 @@ namespace ProyectoFinal.VISTA
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 164);
+            this.button1.Location = new System.Drawing.Point(6, 413);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(192, 44);
+            this.button1.Size = new System.Drawing.Size(192, 84);
             this.button1.TabIndex = 6;
             this.button1.Text = "Ventas";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnCerrarSesion
-            // 
-            this.btnCerrarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
-            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(3, 264);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnCerrarSesion.Size = new System.Drawing.Size(178, 44);
-            this.btnCerrarSesion.TabIndex = 5;
-            this.btnCerrarSesion.Text = "Cerrar sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnPrincipal
             // 
@@ -170,36 +148,15 @@ namespace ProyectoFinal.VISTA
             this.btnPrincipal.ForeColor = System.Drawing.Color.White;
             this.btnPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("btnPrincipal.Image")));
             this.btnPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrincipal.Location = new System.Drawing.Point(3, 21);
+            this.btnPrincipal.Location = new System.Drawing.Point(3, 45);
             this.btnPrincipal.Name = "btnPrincipal";
             this.btnPrincipal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnPrincipal.Size = new System.Drawing.Size(195, 43);
+            this.btnPrincipal.Size = new System.Drawing.Size(195, 106);
             this.btnPrincipal.TabIndex = 3;
             this.btnPrincipal.Text = "Productos";
             this.btnPrincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPrincipal.UseVisualStyleBackColor = false;
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnSetting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetting.ForeColor = System.Drawing.Color.White;
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(3, 214);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnSetting.Size = new System.Drawing.Size(192, 44);
-            this.btnSetting.TabIndex = 1;
-            this.btnSetting.Text = "Configuración";
-            this.btnSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSetting.UseVisualStyleBackColor = true;
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnHorarios
             // 
@@ -212,10 +169,10 @@ namespace ProyectoFinal.VISTA
             this.btnHorarios.ForeColor = System.Drawing.Color.White;
             this.btnHorarios.Image = ((System.Drawing.Image)(resources.GetObject("btnHorarios.Image")));
             this.btnHorarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHorarios.Location = new System.Drawing.Point(6, 114);
+            this.btnHorarios.Location = new System.Drawing.Point(6, 287);
             this.btnHorarios.Name = "btnHorarios";
             this.btnHorarios.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnHorarios.Size = new System.Drawing.Size(192, 44);
+            this.btnHorarios.Size = new System.Drawing.Size(192, 91);
             this.btnHorarios.TabIndex = 1;
             this.btnHorarios.Text = "Laboratorios";
             this.btnHorarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -233,10 +190,10 @@ namespace ProyectoFinal.VISTA
             this.btnNotas.ForeColor = System.Drawing.Color.White;
             this.btnNotas.Image = ((System.Drawing.Image)(resources.GetObject("btnNotas.Image")));
             this.btnNotas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotas.Location = new System.Drawing.Point(0, 70);
+            this.btnNotas.Location = new System.Drawing.Point(8, 157);
             this.btnNotas.Name = "btnNotas";
             this.btnNotas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnNotas.Size = new System.Drawing.Size(186, 38);
+            this.btnNotas.Size = new System.Drawing.Size(186, 107);
             this.btnNotas.TabIndex = 0;
             this.btnNotas.Text = "Lineas";
             this.btnNotas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -355,12 +312,10 @@ namespace ProyectoFinal.VISTA
         private System.Windows.Forms.PictureBox BtnMaximizar;
         private System.Windows.Forms.PictureBox BtnRestaurar;
         private System.Windows.Forms.Button btnPrincipal;
-        private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Button btnHorarios;
         private System.Windows.Forms.Button btnNotas;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Button button1;
     }
 }
