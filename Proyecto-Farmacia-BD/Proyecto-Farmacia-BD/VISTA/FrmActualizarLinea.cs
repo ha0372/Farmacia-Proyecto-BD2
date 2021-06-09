@@ -14,11 +14,10 @@ namespace Proyecto_Farmacia_BD.VISTA
 {
     public partial class FrmActualizarLinea : Form
     {
-        Linea linea = new Linea();
+        CLinea cLinea = new CLinea();
 
-        public FrmActualizarLinea(Linea linea = null)
-        {
-            this.linea = linea;
+        public FrmActualizarLinea()
+        {          
 
             InitializeComponent();
         }
@@ -26,21 +25,29 @@ namespace Proyecto_Farmacia_BD.VISTA
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             //Linea actualizarLinea = new Linea();
+            //linea = (Linea)lineaBindingSource.Current;
+            //linea.Id_Linea = linea.Id_Linea;
+            //linea.NombreLinea = nombreLineaTextBox.Text;
+            //CLinea cLinea = new CLinea();
+            //cLinea.ActualizarLinea(linea);
 
+            Linea linea = new Linea();
+
+            lineaBindingSource.EndEdit();
+
+            lineaBindingSource.EndEdit();
             linea = (Linea)lineaBindingSource.Current;
-            linea.Id_Linea = linea.Id_Linea;
-            linea.NombreLinea = nombreLineaTextBox.Text;
 
-            CLinea cLinea = new CLinea();
             cLinea.ActualizarLinea(linea);
+
+            lineaBindingSource.DataSource = cLinea.Consultar();
 
             this.Close();
         }
 
         private void FrmActualizarLinea_Load(object sender, EventArgs e)
         {
-            id_LineaTextBox.Text = linea.Id_Linea.ToString();
-            nombreLineaTextBox.Text = linea.NombreLinea;
+            lineaBindingSource.DataSource = cLinea.Consultar();
 
         }
     }

@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_Farmacia_BD.VISTA
 {
-    partial class FrmLinea
+    partial class FrmCrearLinea
     {
         /// <summary>
         /// Required designer variable.

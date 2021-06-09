@@ -40,5 +40,25 @@ namespace Proyecto_Farmacia_BD.MODELOS
             cn.Execute(consulta, parametros, commandType: CommandType.Text);
             cn.Close();
         }
+
+        public void Actualizar(Laboratorio laboratorio)
+        {
+            string consulta = "Update Laboratorio set NombreLaboratorio='" + laboratorio.NombreLaboratorio + "'where Id_Laboratorio=" + laboratorio.Id_Laboratorio;
+
+            cn.Open();
+            cn.Execute(consulta);
+            cn.Close();
+
+        }
+
+        public void Eliminar(Laboratorio laboratorio)
+        {
+            string consulta = "Delete from Laboratorio where Id_Laboratorio=" + laboratorio.Id_Laboratorio;
+
+            cn.Open();
+            cn.Execute(consulta);
+            cn.Close();
+
+        }
     }
 }

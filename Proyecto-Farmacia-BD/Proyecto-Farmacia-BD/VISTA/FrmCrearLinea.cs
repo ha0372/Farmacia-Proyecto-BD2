@@ -12,9 +12,9 @@ using Proyecto_Farmacia_BD.ENTIDADES;
 
 namespace Proyecto_Farmacia_BD.VISTA
 {
-    public partial class FrmLinea : Form
+    public partial class FrmCrearLinea : Form
     {
-        public FrmLinea()
+        public FrmCrearLinea()
         {
             InitializeComponent();
         }

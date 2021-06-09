@@ -27,7 +27,7 @@ namespace Proyecto_Farmacia_BD.VISTA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmLinea linea = new FrmLinea();
+            FrmCrearLinea linea = new FrmCrearLinea();
             linea.ShowDialog();
             lineaBindingSource.DataSource = null;
             lineaBindingSource.DataSource = cLinea.Consultar();
@@ -37,7 +37,7 @@ namespace Proyecto_Farmacia_BD.VISTA
         {
             Linea linea = new Linea();
 
-            lineaBindingSource.EndEdit();
+            //lineaBindingSource.EndEdit();
 
             lineaBindingSource.EndEdit();
             linea = (Linea)lineaBindingSource.Current;
@@ -49,16 +49,9 @@ namespace Proyecto_Farmacia_BD.VISTA
 
         private void btnActualizarLinea_Click(object sender, EventArgs e)
         {
-
-            Linea linea = new Linea();
-
-            lineaBindingSource.EndEdit();
-
-            lineaBindingSource.EndEdit();
-            linea = (Linea)lineaBindingSource.Current;
-
-            cLinea.ActualizarLinea(linea);
-
+            FrmActualizarLinea linea = new FrmActualizarLinea();
+            linea.ShowDialog();
+            lineaBindingSource.DataSource = null;
             lineaBindingSource.DataSource = cLinea.Consultar();
 
         }

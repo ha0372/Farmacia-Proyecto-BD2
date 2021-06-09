@@ -2,7 +2,6 @@ C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proye
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\bin\Debug\Proyecto-Farmacia-BD.exe
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\bin\Debug\Proyecto-Farmacia-BD.pdb
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto-Farmacia-BD.csprojAssemblyReference.cache
-C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.Form1.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.Properties.Resources.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmCompra.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto-Farmacia-BD.csproj.GenerateResource.cache
@@ -13,7 +12,6 @@ C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proye
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\bin\Debug\Dapper.dll
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\bin\Debug\Dapper.xml
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto-Farmacia-BD.csproj.CopyComplete
-C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmLinea.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\ProyectoFinal.VISTA.FrmMenu.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmPrincipalProducto.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmCrearProducto.resources
@@ -22,3 +20,5 @@ C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proye
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmPrincipalLaboratorio.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmPrincilaVenta.resources
 C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmActualizarLinea.resources
+C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmCrearLinea.resources
+C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.FrmActualizarLabo.resources

@@ -30,16 +30,13 @@ namespace Proyecto_Farmacia_BD.VISTA
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label nombreLineaLabel;
             this.lineaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lineaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnIngresarLinea = new System.Windows.Forms.Button();
             this.btnEliminarLinea = new System.Windows.Forms.Button();
             this.btnActualizarLinea = new System.Windows.Forms.Button();
-            this.nombreLineaTextBox = new System.Windows.Forms.TextBox();
-            this.lineaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            nombreLineaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.lineaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -64,57 +61,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.lineaDataGridView.Size = new System.Drawing.Size(750, 220);
             this.lineaDataGridView.TabIndex = 1;
             // 
-            // btnIngresarLinea
-            // 
-            this.btnIngresarLinea.Location = new System.Drawing.Point(28, 82);
-            this.btnIngresarLinea.Name = "btnIngresarLinea";
-            this.btnIngresarLinea.Size = new System.Drawing.Size(121, 51);
-            this.btnIngresarLinea.TabIndex = 2;
-            this.btnIngresarLinea.Text = "Ingresar Linea";
-            this.btnIngresarLinea.UseVisualStyleBackColor = true;
-            this.btnIngresarLinea.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnEliminarLinea
-            // 
-            this.btnEliminarLinea.Location = new System.Drawing.Point(295, 82);
-            this.btnEliminarLinea.Name = "btnEliminarLinea";
-            this.btnEliminarLinea.Size = new System.Drawing.Size(121, 51);
-            this.btnEliminarLinea.TabIndex = 3;
-            this.btnEliminarLinea.Text = "Eliminar Linea";
-            this.btnEliminarLinea.UseVisualStyleBackColor = true;
-            this.btnEliminarLinea.Click += new System.EventHandler(this.btnEliminarLinea_Click);
-            // 
-            // btnActualizarLinea
-            // 
-            this.btnActualizarLinea.Location = new System.Drawing.Point(578, 151);
-            this.btnActualizarLinea.Name = "btnActualizarLinea";
-            this.btnActualizarLinea.Size = new System.Drawing.Size(121, 51);
-            this.btnActualizarLinea.TabIndex = 4;
-            this.btnActualizarLinea.Text = "ActualizarLinea";
-            this.btnActualizarLinea.UseVisualStyleBackColor = true;
-            this.btnActualizarLinea.Click += new System.EventHandler(this.btnActualizarLinea_Click);
-            // 
-            // nombreLineaLabel
-            // 
-            nombreLineaLabel.AutoSize = true;
-            nombreLineaLabel.Location = new System.Drawing.Point(551, 101);
-            nombreLineaLabel.Name = "nombreLineaLabel";
-            nombreLineaLabel.Size = new System.Drawing.Size(76, 13);
-            nombreLineaLabel.TabIndex = 4;
-            nombreLineaLabel.Text = "Nombre Linea:";
-            // 
-            // nombreLineaTextBox
-            // 
-            this.nombreLineaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lineaBindingSource, "NombreLinea", true));
-            this.nombreLineaTextBox.Location = new System.Drawing.Point(633, 98);
-            this.nombreLineaTextBox.Name = "nombreLineaTextBox";
-            this.nombreLineaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nombreLineaTextBox.TabIndex = 5;
-            // 
-            // lineaBindingSource
-            // 
-            this.lineaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.Linea);
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_Linea";
@@ -129,13 +75,45 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
+            // lineaBindingSource
+            // 
+            this.lineaBindingSource.DataSource = typeof(Proyecto_Farmacia_BD.ENTIDADES.Linea);
+            // 
+            // btnIngresarLinea
+            // 
+            this.btnIngresarLinea.Location = new System.Drawing.Point(41, 39);
+            this.btnIngresarLinea.Name = "btnIngresarLinea";
+            this.btnIngresarLinea.Size = new System.Drawing.Size(121, 66);
+            this.btnIngresarLinea.TabIndex = 2;
+            this.btnIngresarLinea.Text = "Ingresar Linea";
+            this.btnIngresarLinea.UseVisualStyleBackColor = true;
+            this.btnIngresarLinea.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnEliminarLinea
+            // 
+            this.btnEliminarLinea.Location = new System.Drawing.Point(657, 166);
+            this.btnEliminarLinea.Name = "btnEliminarLinea";
+            this.btnEliminarLinea.Size = new System.Drawing.Size(121, 51);
+            this.btnEliminarLinea.TabIndex = 3;
+            this.btnEliminarLinea.Text = "Eliminar Linea";
+            this.btnEliminarLinea.UseVisualStyleBackColor = true;
+            this.btnEliminarLinea.Click += new System.EventHandler(this.btnEliminarLinea_Click);
+            // 
+            // btnActualizarLinea
+            // 
+            this.btnActualizarLinea.Location = new System.Drawing.Point(188, 39);
+            this.btnActualizarLinea.Name = "btnActualizarLinea";
+            this.btnActualizarLinea.Size = new System.Drawing.Size(121, 66);
+            this.btnActualizarLinea.TabIndex = 4;
+            this.btnActualizarLinea.Text = "ActualizarLinea";
+            this.btnActualizarLinea.UseVisualStyleBackColor = true;
+            this.btnActualizarLinea.Click += new System.EventHandler(this.btnActualizarLinea_Click);
+            // 
             // FrmPrincipalLinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 470);
-            this.Controls.Add(nombreLineaLabel);
-            this.Controls.Add(this.nombreLineaTextBox);
             this.Controls.Add(this.btnActualizarLinea);
             this.Controls.Add(this.btnEliminarLinea);
             this.Controls.Add(this.btnIngresarLinea);
@@ -146,7 +124,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             ((System.ComponentModel.ISupportInitialize)(this.lineaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineaBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -159,6 +136,5 @@ namespace Proyecto_Farmacia_BD.VISTA
         private System.Windows.Forms.Button btnIngresarLinea;
         private System.Windows.Forms.Button btnEliminarLinea;
         private System.Windows.Forms.Button btnActualizarLinea;
-        private System.Windows.Forms.TextBox nombreLineaTextBox;
     }
 }

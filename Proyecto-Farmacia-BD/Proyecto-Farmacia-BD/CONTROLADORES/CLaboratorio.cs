@@ -20,5 +20,13 @@ namespace Proyecto_Farmacia_BD.CONTROLADORES
         {
             mLaboratorio.insertar(laboratorio);
         }
+        public void ActualizarLaboratorio(Laboratorio laboratorio)
+        {
+            mLaboratorio.Actualizar(laboratorio);
+        }
+        public void EliminarLaboratorio(Laboratorio laboratorio)
+        {
+            mLaboratorio.Eliminar(laboratorio);
+        }
     }
 }

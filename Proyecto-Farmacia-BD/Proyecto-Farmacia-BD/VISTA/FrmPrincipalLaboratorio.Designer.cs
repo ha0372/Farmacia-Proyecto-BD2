@@ -32,11 +32,11 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.components = new System.ComponentModel.Container();
             this.btnIngresarNLaboratorio = new System.Windows.Forms.Button();
             this.laboratorioDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.laboratorioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnEliminarLaboratorio = new System.Windows.Forms.Button();
             this.btnActualizarLaboratorio = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.laboratorioDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.laboratorioBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             this.laboratorioDataGridView.AllowUserToAddRows = false;
             this.laboratorioDataGridView.AllowUserToDeleteRows = false;
+            this.laboratorioDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.laboratorioDataGridView.AutoGenerateColumns = false;
             this.laboratorioDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.laboratorioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -62,25 +65,11 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.laboratorioDataGridView.DataSource = this.laboratorioBindingSource;
-            this.laboratorioDataGridView.Location = new System.Drawing.Point(129, 352);
+            this.laboratorioDataGridView.Location = new System.Drawing.Point(30, 218);
             this.laboratorioDataGridView.Name = "laboratorioDataGridView";
             this.laboratorioDataGridView.ReadOnly = true;
-            this.laboratorioDataGridView.Size = new System.Drawing.Size(542, 220);
+            this.laboratorioDataGridView.Size = new System.Drawing.Size(789, 354);
             this.laboratorioDataGridView.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_Laboratorio";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id_Laboratorio";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NombreLaboratorio";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NombreLaboratorio";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // laboratorioBindingSource
             // 
@@ -88,21 +77,38 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // btnEliminarLaboratorio
             // 
-            this.btnEliminarLaboratorio.Location = new System.Drawing.Point(595, 45);
+            this.btnEliminarLaboratorio.Location = new System.Drawing.Point(629, 121);
             this.btnEliminarLaboratorio.Name = "btnEliminarLaboratorio";
             this.btnEliminarLaboratorio.Size = new System.Drawing.Size(167, 78);
             this.btnEliminarLaboratorio.TabIndex = 3;
             this.btnEliminarLaboratorio.Text = "Eliminar Laboratorio";
             this.btnEliminarLaboratorio.UseVisualStyleBackColor = true;
+            this.btnEliminarLaboratorio.Click += new System.EventHandler(this.btnEliminarLaboratorio_Click);
             // 
             // btnActualizarLaboratorio
             // 
-            this.btnActualizarLaboratorio.Location = new System.Drawing.Point(320, 45);
+            this.btnActualizarLaboratorio.Location = new System.Drawing.Point(295, 45);
             this.btnActualizarLaboratorio.Name = "btnActualizarLaboratorio";
             this.btnActualizarLaboratorio.Size = new System.Drawing.Size(167, 78);
             this.btnActualizarLaboratorio.TabIndex = 4;
             this.btnActualizarLaboratorio.Text = "Actualizar Laboratorio";
             this.btnActualizarLaboratorio.UseVisualStyleBackColor = true;
+            this.btnActualizarLaboratorio.Click += new System.EventHandler(this.btnActualizarLaboratorio_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_Laboratorio";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id_Laboratorio";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NombreLaboratorio";
+            this.dataGridViewTextBoxColumn2.HeaderText = "NombreLaboratorio";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // FrmPrincipalLaboratorio
             // 
@@ -127,9 +133,9 @@ namespace Proyecto_Farmacia_BD.VISTA
         private System.Windows.Forms.Button btnIngresarNLaboratorio;
         private System.Windows.Forms.BindingSource laboratorioBindingSource;
         private System.Windows.Forms.DataGridView laboratorioDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Button btnEliminarLaboratorio;
         private System.Windows.Forms.Button btnActualizarLaboratorio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }
