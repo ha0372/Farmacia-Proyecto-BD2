@@ -20,5 +20,13 @@ namespace Proyecto_Farmacia_BD.CONTROLADORES
         {
             mProducto.insertar(producto);
         }
+        public void EliminarProducto(Producto productos)
+        {
+            mProducto.eliminarProducto(productos);
+        }
+        public void ActualizarProducto(Producto producto)
+        {
+            mProducto.actualizarProducto(producto);
+        }
     }
 }

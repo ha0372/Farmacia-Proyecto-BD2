@@ -43,5 +43,24 @@ namespace Proyecto_Farmacia_BD.MODELOS
             cn.Execute(consulta, parametros, commandType: CommandType.Text);
             cn.Close();
         }
+
+        public void eliminarProducto(Producto producto)
+        {
+
+            string consulta = "Delete from Producto where Id_Producto=" + producto.Id_Producto;
+
+            cn.Open();
+            cn.Execute(consulta);
+            cn.Close();
+        }
+        public void actualizarProducto(Producto producto)
+        {
+
+            string consulta = "Update Producto set NombreProducto=" + producto.NombreProducto + "where ExistenciasProductos=" + producto.ExistenciasProductos;
+
+            cn.Open();
+            cn.Execute(consulta);
+            cn.Close();
+        }
     }
 }
