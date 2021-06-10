@@ -82,6 +82,12 @@
     <Compile Include="VISTA\FrmActualizarLinea.Designer.cs">
       <DependentUpon>FrmActualizarLinea.cs</DependentUpon>
     </Compile>
+    <Compile Include="VISTA\FrmActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmActualizarProducto.Designer.cs">
+      <DependentUpon>FrmActualizarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="VISTA\FrmCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="VISTA\FrmActualizarLinea.resx">
       <DependentUpon>FrmActualizarLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmActualizarProducto.resx">
+      <DependentUpon>FrmActualizarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmCompra.resx">
       <DependentUpon>FrmCompra.cs</DependentUpon>

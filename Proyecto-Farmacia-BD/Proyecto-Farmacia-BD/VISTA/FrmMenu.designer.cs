@@ -96,7 +96,7 @@ namespace ProyectoFinal.VISTA
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(14, -40);
+            this.pictureBox2.Location = new System.Drawing.Point(27, -76);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1078, 760);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -126,7 +126,6 @@ namespace ProyectoFinal.VISTA
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(6, 413);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -147,7 +146,6 @@ namespace ProyectoFinal.VISTA
             this.btnPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrincipal.ForeColor = System.Drawing.Color.White;
             this.btnPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("btnPrincipal.Image")));
-            this.btnPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrincipal.Location = new System.Drawing.Point(3, 45);
             this.btnPrincipal.Name = "btnPrincipal";
             this.btnPrincipal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -168,7 +166,6 @@ namespace ProyectoFinal.VISTA
             this.btnHorarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHorarios.ForeColor = System.Drawing.Color.White;
             this.btnHorarios.Image = ((System.Drawing.Image)(resources.GetObject("btnHorarios.Image")));
-            this.btnHorarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHorarios.Location = new System.Drawing.Point(6, 287);
             this.btnHorarios.Name = "btnHorarios";
             this.btnHorarios.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -189,7 +186,6 @@ namespace ProyectoFinal.VISTA
             this.btnNotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotas.ForeColor = System.Drawing.Color.White;
             this.btnNotas.Image = ((System.Drawing.Image)(resources.GetObject("btnNotas.Image")));
-            this.btnNotas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNotas.Location = new System.Drawing.Point(8, 157);
             this.btnNotas.Name = "btnNotas";
             this.btnNotas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

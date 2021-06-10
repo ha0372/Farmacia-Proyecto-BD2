@@ -47,6 +47,8 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // productoDataGridView
             // 
+            this.productoDataGridView.AllowUserToAddRows = false;
+            this.productoDataGridView.AllowUserToDeleteRows = false;
             this.productoDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -61,19 +63,18 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.productoDataGridView.DataSource = this.productoBindingSource;
-            this.productoDataGridView.Location = new System.Drawing.Point(48, 398);
-            this.productoDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.productoDataGridView.Location = new System.Drawing.Point(32, 259);
             this.productoDataGridView.Name = "productoDataGridView";
+            this.productoDataGridView.ReadOnly = true;
             this.productoDataGridView.RowHeadersWidth = 62;
-            this.productoDataGridView.Size = new System.Drawing.Size(1442, 438);
+            this.productoDataGridView.Size = new System.Drawing.Size(960, 285);
             this.productoDataGridView.TabIndex = 1;
             // 
             // btnRegistrarNuevo
             // 
-            this.btnRegistrarNuevo.Location = new System.Drawing.Point(171, 114);
-            this.btnRegistrarNuevo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRegistrarNuevo.Location = new System.Drawing.Point(114, 74);
             this.btnRegistrarNuevo.Name = "btnRegistrarNuevo";
-            this.btnRegistrarNuevo.Size = new System.Drawing.Size(222, 92);
+            this.btnRegistrarNuevo.Size = new System.Drawing.Size(148, 60);
             this.btnRegistrarNuevo.TabIndex = 2;
             this.btnRegistrarNuevo.Text = "Registrar Nuevo Producto";
             this.btnRegistrarNuevo.UseVisualStyleBackColor = true;
@@ -81,10 +82,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // btnEliminarProductos
             // 
-            this.btnEliminarProductos.Location = new System.Drawing.Point(627, 114);
-            this.btnEliminarProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEliminarProductos.Location = new System.Drawing.Point(418, 74);
             this.btnEliminarProductos.Name = "btnEliminarProductos";
-            this.btnEliminarProductos.Size = new System.Drawing.Size(294, 92);
+            this.btnEliminarProductos.Size = new System.Drawing.Size(196, 60);
             this.btnEliminarProductos.TabIndex = 3;
             this.btnEliminarProductos.Text = "Eliminar Productos";
             this.btnEliminarProductos.UseVisualStyleBackColor = true;
@@ -92,10 +92,9 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // btnActualizarProducto
             // 
-            this.btnActualizarProducto.Location = new System.Drawing.Point(1186, 235);
-            this.btnActualizarProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnActualizarProducto.Location = new System.Drawing.Point(791, 153);
             this.btnActualizarProducto.Name = "btnActualizarProducto";
-            this.btnActualizarProducto.Size = new System.Drawing.Size(237, 92);
+            this.btnActualizarProducto.Size = new System.Drawing.Size(158, 60);
             this.btnActualizarProducto.TabIndex = 4;
             this.btnActualizarProducto.Text = "Actualizar Producto";
             this.btnActualizarProducto.UseVisualStyleBackColor = true;
@@ -107,6 +106,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn1.HeaderText = "Id_Producto";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -114,6 +114,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn2.HeaderText = "Linea_FK";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -121,6 +122,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn3.HeaderText = "Laboratorio_FK";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -128,6 +130,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn4.HeaderText = "NombreProducto";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -135,6 +138,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn5.HeaderText = "PrecioProducto";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -142,6 +146,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn6.HeaderText = "ExistenciasProductos";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // productoBindingSource
             // 
@@ -149,14 +154,13 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // FrmPrincipalProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1560, 855);
+            this.ClientSize = new System.Drawing.Size(1069, 487);
             this.Controls.Add(this.btnActualizarProducto);
             this.Controls.Add(this.btnEliminarProductos);
             this.Controls.Add(this.btnRegistrarNuevo);
             this.Controls.Add(this.productoDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmPrincipalProducto";
             this.Text = "FrmPrincipalProducto";
             this.Load += new System.EventHandler(this.FrmPrincipalProducto_Load);

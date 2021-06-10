@@ -43,7 +43,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.detalleVentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnIngresarVenta = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnEliminarVenta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ventaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).BeginInit();
@@ -164,15 +163,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.btnIngresarVenta.UseVisualStyleBackColor = true;
             this.btnIngresarVenta.Click += new System.EventHandler(this.btnIngresarVenta_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(380, 46);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 71);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Actualizar Venta";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // btnEliminarVenta
             // 
             this.btnEliminarVenta.Location = new System.Drawing.Point(729, 46);
@@ -181,6 +171,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.btnEliminarVenta.TabIndex = 4;
             this.btnEliminarVenta.Text = "Eliminar Venta";
             this.btnEliminarVenta.UseVisualStyleBackColor = true;
+            this.btnEliminarVenta.Click += new System.EventHandler(this.btnEliminarVenta_Click);
             // 
             // FrmPrincilaVenta
             // 
@@ -188,7 +179,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 481);
             this.Controls.Add(this.btnEliminarVenta);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnIngresarVenta);
             this.Controls.Add(this.detalleVentaDataGridView);
             this.Controls.Add(this.ventaDataGridView);
@@ -218,7 +208,6 @@ namespace Proyecto_Farmacia_BD.VISTA
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.Button btnIngresarVenta;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEliminarVenta;
     }
 }
