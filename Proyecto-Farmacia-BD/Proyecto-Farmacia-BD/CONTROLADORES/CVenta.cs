@@ -21,9 +21,14 @@ namespace Proyecto_Farmacia_BD.CONTROLADORES
             mVenta.insertarVenta(venta);
         }
 
-        public String UltimaVenta()
+        //public String UltimaVenta()
+        //{
+        //    return mVenta.UltimaVenta();
+        //}
+
+        public void EliminarDetalle(Venta venta)
         {
-            return mVenta.UltimaVenta();
+            mVenta.eliminarDetalle(venta);
         }
 
     }

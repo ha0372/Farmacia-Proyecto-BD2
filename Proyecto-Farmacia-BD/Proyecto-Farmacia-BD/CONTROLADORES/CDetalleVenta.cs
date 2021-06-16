@@ -21,5 +21,10 @@ namespace Proyecto_Farmacia_BD.CONTROLADORES
             mDetalleV.insertar(detalleVenta);
         }
 
+        public void EliminarDetalle(DetalleVenta venta)
+        {
+            mDetalleV.eliminarDetalle(venta);
+        }
+
     }
 }

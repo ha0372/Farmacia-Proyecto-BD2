@@ -14,27 +14,27 @@ namespace Proyecto_Farmacia_BD.MODELOS
     {
         IDbConnection cn = Conexion.conectar();
 
-        public string UltimaVenta()
-        {
+        //public string UltimaVenta()
+        //{
 
-            cn.Open();
-            string consulta = "SELECT distinct TOP 1 Id_Venta FROM  Venta ORDER BY Id_Venta DESC";
-            SqlCommand venta = new SqlCommand(consulta, (SqlConnection)cn);
-            SqlDataReader r = venta.ExecuteReader();
-            //ventas = cn.Query<Venta>(consulta, commandType: CommandType.StoredProcedure).ToList();
+        //    cn.Open();
+        //    string consulta = "SELECT distinct TOP 1 Id_Venta FROM  Venta ORDER BY Id_Venta DESC";
+        //    SqlCommand venta = new SqlCommand(consulta, (SqlConnection)cn);
+        //    SqlDataReader r = venta.ExecuteReader();
+        //    //ventas = cn.Query<Venta>(consulta, commandType: CommandType.StoredProcedure).ToList();
 
-            if (r.Read())
-            {
-                return r["Id_Venta"].ToString();
-            }
-            else
-            {
-                return "Null";
-            }
+        //    if (r.Read())
+        //    {
+        //        return r["Id_Venta"].ToString();
+        //    }
+        //    else
+        //    {
+        //        return "Null";
+        //    }
 
            
-            cn.Close();
-        }
+        //    cn.Close();
+        //}
 
 
         public List<Venta> ConsultarVenta()
@@ -63,6 +63,15 @@ namespace Proyecto_Farmacia_BD.MODELOS
 
             cn.Open();
             cn.Execute(consulta, parametros, commandType: CommandType.Text);
+            cn.Close();
+        }
+        public void eliminarDetalle(Venta venta)
+        {
+
+            string consulta = "Delete from Venta where Id_Venta =" + venta.Id_Venta;
+
+            cn.Open();
+            cn.Execute(consulta);
             cn.Close();
         }
     }

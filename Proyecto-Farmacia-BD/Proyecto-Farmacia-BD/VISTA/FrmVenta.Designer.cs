@@ -34,7 +34,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             System.Windows.Forms.Label producto_FKLabel;
             System.Windows.Forms.Label cantidadVProductoLabel;
             System.Windows.Forms.Label totalVentaLabel;
-            System.Windows.Forms.Label label1;
             System.Windows.Forms.Label clienteLabel;
             System.Windows.Forms.Label fechaVentaLabel;
             this.venta_FKTextBox = new System.Windows.Forms.TextBox();
@@ -44,8 +43,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.totalVentaTextBox = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.fechaVentaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -54,7 +51,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             producto_FKLabel = new System.Windows.Forms.Label();
             cantidadVProductoLabel = new System.Windows.Forms.Label();
             totalVentaLabel = new System.Windows.Forms.Label();
-            label1 = new System.Windows.Forms.Label();
             clienteLabel = new System.Windows.Forms.Label();
             fechaVentaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.detalleVentaBindingSource)).BeginInit();
@@ -84,7 +80,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             // cantidadVProductoLabel
             // 
             cantidadVProductoLabel.AutoSize = true;
-            cantidadVProductoLabel.Location = new System.Drawing.Point(212, 101);
+            cantidadVProductoLabel.Location = new System.Drawing.Point(374, 61);
             cantidadVProductoLabel.Name = "cantidadVProductoLabel";
             cantidadVProductoLabel.Size = new System.Drawing.Size(105, 13);
             cantidadVProductoLabel.TabIndex = 4;
@@ -98,15 +94,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             totalVentaLabel.Size = new System.Drawing.Size(65, 13);
             totalVentaLabel.TabIndex = 6;
             totalVentaLabel.Text = "Total Venta:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(263, 58);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(117, 13);
-            label1.TabIndex = 9;
-            label1.Text = "Nombre Medicamento :";
             // 
             // clienteLabel
             // 
@@ -149,7 +136,7 @@ namespace Proyecto_Farmacia_BD.VISTA
             // cantidadVProductoTextBox
             // 
             this.cantidadVProductoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.detalleVentaBindingSource, "CantidadVProducto", true));
-            this.cantidadVProductoTextBox.Location = new System.Drawing.Point(323, 98);
+            this.cantidadVProductoTextBox.Location = new System.Drawing.Point(485, 58);
             this.cantidadVProductoTextBox.Name = "cantidadVProductoTextBox";
             this.cantidadVProductoTextBox.Size = new System.Drawing.Size(100, 20);
             this.cantidadVProductoTextBox.TabIndex = 5;
@@ -174,9 +161,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(label1);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.totalVentaTextBox);
             this.groupBox1.Controls.Add(totalVentaLabel);
             this.groupBox1.Controls.Add(producto_FKLabel);
@@ -189,22 +173,6 @@ namespace Proyecto_Farmacia_BD.VISTA
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalle Venta";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(589, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Buscar Medicamento";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(386, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 20);
-            this.textBox1.TabIndex = 8;
             // 
             // groupBox2
             // 
@@ -274,8 +242,6 @@ namespace Proyecto_Farmacia_BD.VISTA
         private System.Windows.Forms.TextBox totalVentaTextBox;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.BindingSource ventaBindingSource;
         private System.Windows.Forms.TextBox clienteTextBox;

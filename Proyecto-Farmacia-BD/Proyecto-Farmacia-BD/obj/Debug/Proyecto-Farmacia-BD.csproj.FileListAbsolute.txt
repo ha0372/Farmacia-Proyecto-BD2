@@ -47,3 +47,4 @@ C:\Users\carlj\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proye
 C:\Users\carlj\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\bin\Debug\Dapper.xml
 C:\Users\carlj\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmActualizarProducto.resources
 C:\Users\carlj\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto-Farmacia-BD.csproj.CopyComplete
+C:\Users\crobe\Documents\GitHub\Farmacia-Proyecto-BD2\Proyecto-Farmacia-BD\Proyecto-Farmacia-BD\obj\Debug\Proyecto_Farmacia_BD.VISTA.FrmActualizarProducto.resources

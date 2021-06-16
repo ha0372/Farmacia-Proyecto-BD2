@@ -24,8 +24,12 @@ namespace Proyecto_Farmacia_BD.VISTA
         {
             FrmVenta venta = new FrmVenta();
             venta.ShowDialog();
+
             ventaBindingSource.DataSource = null;
             ventaBindingSource.DataSource = cVenta.ConsultarV();
+
+            detalleVentaBindingSource.DataSource = null;
+            detalleVentaBindingSource.DataSource = cDetalleVenta.Consultar();
         }
 
         private void FrmPrincilaVenta_Load(object sender, EventArgs e)
@@ -36,7 +40,24 @@ namespace Proyecto_Farmacia_BD.VISTA
 
         private void btnEliminarVenta_Click(object sender, EventArgs e)
         {
+            DetalleVenta detalle = new DetalleVenta();
 
+            detalleVentaBindingSource.EndEdit();
+            detalle = (DetalleVenta)detalleVentaBindingSource.Current;
+
+            cDetalleVenta.EliminarDetalle(detalle);
+
+            detalleVentaBindingSource.DataSource = cDetalleVenta.Consultar();
+
+
+            Venta venta = new Venta();
+
+            ventaBindingSource.EndEdit();
+            venta = (Venta)ventaBindingSource.Current;
+
+            cVenta.EliminarDetalle(venta);
+
+            ventaBindingSource.DataSource = cVenta.ConsultarV();
         }
     }
 }
