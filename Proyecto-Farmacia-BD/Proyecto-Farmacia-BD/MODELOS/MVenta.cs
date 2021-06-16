@@ -6,12 +6,36 @@ using System.Threading.Tasks;
 using Dapper;
 using System.Data;
 using Proyecto_Farmacia_BD.ENTIDADES;
+using System.Data.SqlClient;
 
 namespace Proyecto_Farmacia_BD.MODELOS
 {
     public class MVenta
     {
         IDbConnection cn = Conexion.conectar();
+
+        public string UltimaVenta()
+        {
+
+            cn.Open();
+            string consulta = "SELECT distinct TOP 1 Id_Venta FROM  Venta ORDER BY Id_Venta DESC";
+            SqlCommand venta = new SqlCommand(consulta, (SqlConnection)cn);
+            SqlDataReader r = venta.ExecuteReader();
+            //ventas = cn.Query<Venta>(consulta, commandType: CommandType.StoredProcedure).ToList();
+
+            if (r.Read())
+            {
+                return r["Id_Venta"].ToString();
+            }
+            else
+            {
+                return "Null";
+            }
+
+           
+            cn.Close();
+        }
+
 
         public List<Venta> ConsultarVenta()
         {

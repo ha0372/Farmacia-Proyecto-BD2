@@ -20,5 +20,11 @@ namespace Proyecto_Farmacia_BD.CONTROLADORES
         {
             mVenta.insertarVenta(venta);
         }
+
+        public String UltimaVenta()
+        {
+            return mVenta.UltimaVenta();
+        }
+
     }
 }

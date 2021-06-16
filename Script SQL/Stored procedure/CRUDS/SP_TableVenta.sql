@@ -114,3 +114,14 @@ CREATE PROCEDURE sp_ConsultarLinea
 	GO
 
 	Select * from  Laboratorio
+
+
+
+	Create PROCEDURE [dbo].[sp_ConsultarLaboratorio]
+	AS
+	BEGIN
+		SET NOCOUNT ON;
+		Select * from  Laboratorio
+	END
+
+	select *from Venta

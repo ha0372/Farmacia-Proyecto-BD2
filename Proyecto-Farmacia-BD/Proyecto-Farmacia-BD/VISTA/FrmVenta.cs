@@ -21,9 +21,10 @@ namespace Proyecto_Farmacia_BD.VISTA
 
         //public Cuenta cuenta = new Cuenta();
 
+        CVenta cVenta = new CVenta();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            CVenta cVenta = new CVenta();
+           
             Venta venta = new Venta();
             CDetalleVenta cDetalles = new CDetalleVenta();
             DetalleVenta detalles = new DetalleVenta();
@@ -39,12 +40,20 @@ namespace Proyecto_Farmacia_BD.VISTA
 
             this.Close();
         }
+        int Id_Venta;
+        int prueba;
 
         private void FrmVenta_Load(object sender, EventArgs e)
         {
             ventaBindingSource.AddNew();
+
             detalleVentaBindingSource.AddNew();
-            
+            Id_Venta = Convert.ToInt32( cVenta.UltimaVenta());
+            prueba = Id_Venta +1;
+            venta_FKTextBox.Text = prueba.ToString();
+
+
+
         }
     }
 }
